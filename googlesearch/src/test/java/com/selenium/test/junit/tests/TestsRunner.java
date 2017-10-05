@@ -1,0 +1,17 @@
+package com.selenium.test.junit.tests;
+
+import org.junit.runner.JUnitCore;
+import org.junit.runner.Result;
+import org.junit.runner.notification.Failure;
+
+public class TestsRunner {
+    public static void main(String[] args) {
+        Result result = JUnitCore.runClasses(GooglePageTest.class);
+        for (Failure failure : result.getFailures()) {
+            System.out.println(failure.toString());
+        }
+        if (result.wasSuccessful()) System.out.println("Test finished Successfully");
+        System.out.println("Total tests completed: " + result.getRunCount());
+    }
+}
+
