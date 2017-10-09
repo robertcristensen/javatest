@@ -9,7 +9,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
-
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -36,6 +37,17 @@ public class WebDriverFactory {
         }
     }
 
+    public static URL getUrl() {
+        try {
+            String u = "http://18.221.112.57:4446/wd/hub";
+            URL url = new URL(u);
+            return url;
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
     /**
      * Main method of class - it initialize driver and starts browser.
      *
@@ -49,8 +61,8 @@ public class WebDriverFactory {
             } else {
                 switch (browser) {
                     case FIREFOX:
-                        System.setProperty("webdriver.gecko.driver","E:\\Software\\geckodriver.exe");
-                        driver = new FirefoxDriver(CapabilitiesGenerator.getDefaultCapabilities(Browser.FIREFOX));
+                       // System.setProperty("webdriver.gecko.driver","E:\\Software\\geckodriver.exe");
+                        driver = new RemoteWebDriver(getUrl(), CapabilitiesGenerator.getDefaultCapabilities(Browser.FIREFOX));
                         break;
                     case CHROME:
                         System.setProperty("webdriver.chrome.driver","C:\\Windows\\chromedriver.exe");
