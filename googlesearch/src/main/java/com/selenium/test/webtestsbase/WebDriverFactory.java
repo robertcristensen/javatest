@@ -39,7 +39,7 @@ public class WebDriverFactory {
 
     public static URL getUrl() {
         try {
-            String u = "http://18.221.112.57:4446/wd/hub";
+            String u = "http://18.221.228.37:4446/wd/hub";
             URL url = new URL(u);
             return url;
         } catch (MalformedURLException e) {
@@ -63,6 +63,7 @@ public class WebDriverFactory {
                     case FIREFOX:
                        // System.setProperty("webdriver.gecko.driver","E:\\Software\\geckodriver.exe");
                         driver = new RemoteWebDriver(getUrl(), CapabilitiesGenerator.getDefaultCapabilities(Browser.FIREFOX));
+                      //  driver = new FirefoxDriver(CapabilitiesGenerator.getDefaultCapabilities(Browser.FIREFOX));
                         break;
                     case CHROME:
                         System.setProperty("webdriver.chrome.driver","C:\\Windows\\chromedriver.exe");
