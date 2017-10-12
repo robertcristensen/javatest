@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]" junit="true">
+  <test name="Surefire test(failed)" junit="true">
+    <classes>
+      <class name="com.selenium.test.junit.tests.PageObjectTest">
+        <methods>
+          <include name="testSearch"/>
+        </methods>
+      </class> <!-- com.selenium.test.junit.tests.PageObjectTest -->
+      <class name="com.selenium.test.junit.tests.SimpleTest">
+        <methods>
+          <include name="testFillGoogleForm"/>
+        </methods>
+      </class> <!-- com.selenium.test.junit.tests.SimpleTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

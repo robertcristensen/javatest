@@ -37,9 +37,12 @@ public class WebDriverFactory {
         }
     }
 
-    public static URL getUrl() {
+    private static URL getUrl() {
         try {
-            String u = "http://18.221.228.37:4446/wd/hub";
+         //   String u = "http://18.221.228.37:4446/wd/hub";
+         //   String u = "http://172.18.0.2:4444/wd/hub";
+
+            String u = "http://127.0.0.1:4446/wd/hub";
             URL url = new URL(u);
             return url;
         } catch (MalformedURLException e) {
