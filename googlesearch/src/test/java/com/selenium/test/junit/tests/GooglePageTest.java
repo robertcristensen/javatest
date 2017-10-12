@@ -26,7 +26,7 @@ public class GooglePageTest {
         GooglePage googlePage = new GooglePage();
         googlePage.inputText(toSearch);
         GoogleSearchResultPage  resultsPage = googlePage.doSearch();
-        System.out.println(resultsPage.numberOfLinks());
+   //     System.out.println(resultsPage.numberOfLinks());
         Assert.assertEquals(ExpectedNumberOfLinks,resultsPage.numberOfLinks());
     }
 
