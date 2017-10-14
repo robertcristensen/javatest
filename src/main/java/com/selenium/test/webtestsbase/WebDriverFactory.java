@@ -39,10 +39,11 @@ public class WebDriverFactory {
 
     private static URL getUrl() {
         try {
-              String u = "http://18.216.8.56:4446/wd/hub";
+         //     String u = "http://18.216.8.56:4446/wd/hub";
          //     String u = "http://172.18.0.2:4444/wd/hub";
 
          //   String u = "http://127.0.0.1:4446/wd/hub";
+            String u = "http://" + System.getenv("SELENIUM_HUB_EP") + "/wd/hub";
             URL url = new URL(u);
             return url;
         } catch (MalformedURLException e) {
