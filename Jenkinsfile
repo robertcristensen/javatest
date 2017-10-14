@@ -11,7 +11,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("maven-googletest")
+        app = docker.build("maven-googletest").withRun('-e "SELENIUM_HUB_EP=18.216.8.56:4446" -v /tmp/.m2:/root/.m2')
     }
 
     stage('Run Test') {
