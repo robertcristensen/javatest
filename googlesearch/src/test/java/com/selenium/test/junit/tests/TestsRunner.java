@@ -14,8 +14,7 @@ public class TestsRunner {
         }
         if (result.wasSuccessful()) System.out.println("Test finished Successfully");
         System.out.println("Total tests completed: " + result.getRunCount());*/
-        String hub_ep = System.getenv("SELENIUM_HUB_EP");
-        System.out.println("http://" + hub_ep + "/wd/hub");
+
 
     }
 }
