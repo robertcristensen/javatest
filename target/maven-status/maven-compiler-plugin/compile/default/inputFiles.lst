@@ -1,0 +1,11 @@
+/usr/src/mymaven/src/main/java/com/selenium/test/webtestsbase/Main.java
+/usr/src/mymaven/src/main/java/com/selenium/test/configuration/properties/PropertiesLoader.java
+/usr/src/mymaven/src/main/java/com/selenium/test/webtestsbase/BasePage.java
+/usr/src/mymaven/src/main/java/com/selenium/test/webtestsbase/CapabilitiesGenerator.java
+/usr/src/mymaven/src/main/java/com/selenium/test/webtestsbase/WebDriverFactory.java
+/usr/src/mymaven/src/main/java/com/selenium/test/exceptions/TestsConfigurationException.java
+/usr/src/mymaven/src/main/java/com/selenium/test/webtestsbase/Browser.java
+/usr/src/mymaven/src/main/java/com/selenium/test/configuration/properties/Property.java
+/usr/src/mymaven/src/main/java/com/selenium/test/utils/TimeUtils.java
+/usr/src/mymaven/src/main/java/com/selenium/test/configuration/properties/PropertyFile.java
+/usr/src/mymaven/src/main/java/com/selenium/test/configuration/TestsConfig.java

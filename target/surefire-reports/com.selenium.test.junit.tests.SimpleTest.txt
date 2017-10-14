@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.selenium.test.junit.tests.SimpleTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 16.085 s <<< FAILURE! - in com.selenium.test.junit.tests.SimpleTest
+testFillGoogleForm(com.selenium.test.junit.tests.SimpleTest)  Time elapsed: 16.084 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: #masthead-search-term
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'ip-172-31-0-63', ip: '172.31.0.63', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-1038-aws', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{moz:profile=/tmp/rust_mozprofile.hQUDPaSrQSnS, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=LINUX, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0, platformVersion=4.4.0-1038-aws, moz:processID=640, browserName=firefox, javascriptEnabled=true, platformName=LINUX}]
+Session ID: b0df21b0-5d8b-4977-bf79-202a8f62b5d7
+*** Element info: {Using=css selector, value=#masthead-search-term}
+	at com.selenium.test.junit.tests.SimpleTest.testFillGoogleForm(SimpleTest.java:34)
+
