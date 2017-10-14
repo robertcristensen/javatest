@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="7669" started-at="2017-10-14T10:48:57Z" finished-at="2017-10-14T10:49:04Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="7669" started-at="2017-10-14T10:48:57Z" finished-at="2017-10-14T10:49:04Z">
+      <class name="com.selenium.test.junit.tests.GooglePageTest">
+        <test-method status="PASS" signature="testSearch()[pri:0, instance:testSearch(com.selenium.test.junit.tests.GooglePageTest)]" name="testSearch" duration-ms="7590" started-at="2017-10-14T13:48:57Z" finished-at="2017-10-14T13:49:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearch -->
+      </class> <!-- com.selenium.test.junit.tests.GooglePageTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
