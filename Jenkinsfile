@@ -24,4 +24,9 @@ node {
             sh 'ls -la'
         }
     }
+    post {
+        always {
+            junit 'target/surefire-reports/junitreports/*.xml'
+        }
+    }
 }
