@@ -24,9 +24,7 @@ node {
             sh 'ls -la'
         }
     }
-    post {
-        always {
-            junit 'target/surefire-reports/junitreports/*.xml'
-        }
+    stage('Gather reports') {
+         junit 'target/surefire-reports/junitreports/*.xml'
     }
 }
