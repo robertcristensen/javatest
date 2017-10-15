@@ -20,6 +20,8 @@ node {
 
         app.inside {
             sh 'mvn test -Dtest=GooglePageTest'
+            sh 'pwd'
+            sh 'ls -la'
         }
     }
 }
