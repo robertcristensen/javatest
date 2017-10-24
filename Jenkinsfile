@@ -20,6 +20,11 @@ node {
 
         app.inside {
             sh 'mvn test -Dtest=GooglePageTest'
+            sh 'pwd'
+            sh 'ls -la'
         }
+    }
+    stage('Gather reports') {
+         junit 'target/surefire-reports/junitreports/*.xml'
     }
 }
